@@ -6,14 +6,24 @@ function App() {
   const [count, setCount] = useState(0)
  const concerns = ['Autism Spectrum Disorder (ASD)', 'Social Communication Challenges','Behavior Challenges','Development Delays']
   return (
-    <main className='flex flex-col border-2 border-black border-solid '>
+    <main className='flex flex-col  '>
      <Navbar />
      <div id='hero' className='h-[100vh] w-full bg-[./assets/stock.png] bg-cover bg-center'  >
-      <p className='w-[45vw] font-new text-black text-[50px] text-black  ml-[40vw] mt-[10vh]'>UNLOCK YOUR CHILD'S POTENTIAL WITH PERSONALIZED ABA THERAPY</p>
+      <p id='heroText' className='w-[45vw] font-new text-[50px]  ml-[40vw] mt-[10vh]'>UNLOCK YOUR CHILD'S POTENTIAL WITH PERSONALIZED ABA THERAPY</p>
      </div>
-     <div className='grid grid-cols-2 gap-4'>
-          <div>
-            <h1 className='text-[30px] font-[600]'>
+     <div id='about' className='p-[50px] flex items-center justify-center'>
+      <p className='w-[45vw]'>
+        At Play To Learn Therapy we believe every child in Miami
+         has a unique and brilliant potential waiting to be unlocked.
+          Located in the heart of our vibrant, multicultural community, 
+          we provide exceptional, compassionate, and culturally-responsive 
+          Applied Behavior Analysis (ABA) therapy for children with autism
+           spectrum disorder (ASD) and other developmental differences.
+      </p>
+     </div>
+     <div className='grid grid-cols-3 gap-x-4 m-10'>
+          <div className='p-[50px]  bg-[#F5F5DC] border-r-2 border-black'>
+            <h1  id='serviceHeader' className='text-[30px] font-[600]'>
               In-Home ABA Therapy
             </h1>
             <p>
@@ -27,22 +37,8 @@ function App() {
                 behaviors.
             </p>
           </div>
-          <div>
-            <h1 className='text-[30px] font-[600]'>
-              Clinic Based ABA Therapy
-            </h1>
-            <p>
-              Our clinic-based ABA therapy provides a structured,
-               supportive environment where children can learn, 
-               grow, and practice new skills. With access to specialized 
-               materials, peer interaction opportunities, and a team 
-               of trained professionals, the clinic setting helps 
-               children build independence and adaptability outside of 
-               the home.
-            </p>
-          </div>
-            <div>
-              <h1 className='text-[30px] font-[600]'>
+            <div className='p-[50px]  bg-[#F5F5DC] border-r-2 border-black'> 
+              <h1  id='serviceHeader' className='text-[30px] font-[600]'>
                School Shadowing/Support
               </h1>
               <p>
@@ -54,8 +50,8 @@ function App() {
                  and teachers.
               </p>
             </div>
-            <div>
-          <h1 className='text-[30px] font-[600]'>
+            <div className='p-[50px]  bg-[#F5F5DC]'>
+          <h1  id='serviceHeader' className='text-[30px] font-[600]'>
             Parent Training
           </h1>
           <p>
