@@ -14,9 +14,7 @@ const config: Config = {
       transformOrigin: {
         'center-right': 'center right'
       },
-      fontFamily: {
-        Junge: 'https://fonts.googleapis.com/css2?family=Junge&display=swap'
-      },
+       
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
