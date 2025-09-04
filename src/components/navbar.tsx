@@ -1,10 +1,17 @@
 import logo from '../assets/logo.png'
+ 
+import bcba from '../assets/bcba.png'
 export default function Navbar() {
     return (
-        <div className='w-full h-10 sticky top-0 z-50'>
-            <img src={logo} alt="" className='max-w-[15vw]'/>
-
-          
+        <div id='navbar' className='w-full h-10 flex items-center justify-around'>
+            <a href="#">   <img src={logo} alt="" className='max-w-[15vw]'/></a>
+            <a href=''>About</a>
+            <a href="#"> Events</a>
+            <a href="#">Services</a>
+            <a href="#">Career</a>
+            <a href="#">Resources</a>
+             <a href="#">Contact Us</a>
+            <img className='w-[80px] mr-[40vw]' src={bcba} alt="" />
         </div>
     )
 }
