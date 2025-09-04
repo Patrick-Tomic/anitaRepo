@@ -3,7 +3,7 @@ import logo from '../assets/logo.png'
 import bcba from '../assets/bcba.png'
 export default function Navbar() {
     return (
-        <div id='navbar' className='w-full h-10 flex items-center justify-around'>
+        <div id='navbar' className='w-full h-10  flex items-center justify-around'>
             <a href="/">   <img src={logo} alt="" className='max-w-[15vw]'/></a>
             <a href='/about'>About</a>
             <a href="#"> Events</a>

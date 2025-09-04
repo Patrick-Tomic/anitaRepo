@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
  import Navbar from './components/navbar'
 import './App.css'
 
@@ -6,46 +6,64 @@ import bcbs from './assets/bcbs.png'
 import cigna from './assets/cigna.png'
 import united from './assets/united.png'
 import aetna from './assets/aetna.png'
+import avmed from './assets/avmed.png'
+import childrensmedical from './assets/childrensmedical.png'
+import molina from './assets/molina.png'
+import sunshine from './assets/sunshine.png'
+import humana from './assets/humana.png'
+import simply from './assets/simply.png'
+import communitycare from './assets/communitycare.png'
+import umr from './assets/umr.png'
 import Footer from './components/footer'
 
 function Home() {
-  const [count, setCount] = useState(0)
- const concerns = ['Autism Spectrum Disorder (ASD)', 'Social Communication Challenges','Behavior Challenges','Development Delays']
 
 ///event listners for learn here links, hovering makes learn more anchor visible Link A-D
 const divA = document.querySelector('#divA')
+const serviceA = document.querySelector('.serviceA')
+const serviceB = document.querySelector('.serviceB')
+const serviceC = document.querySelector('.serviceC')
+const serviceD = document.querySelector('.serviceD')
 const divB = document.querySelector('#divB')
 const divC = document.querySelector('#divC')
 const divD = document.querySelector('#divD')
 const linkA = document.querySelector('.linkA')
 divA?.addEventListener('mouseover',()=>{
- linkA?.classList.remove('hidden')
+ linkA?.classList.remove('hidden')  
+  serviceA?.setAttribute('style','text-decoration: underline; color:#333333; font-size:40px;')  
 })
 divA?.addEventListener('mouseout',()=>{
  linkA?.classList.add('hidden')
+    serviceA?.setAttribute('style','text-decoration: none; color:#000000; font-size:30px;' )
 })
  
 const linkB = document.querySelector('.linkB')
 divB?.addEventListener('mouseover',()=>{
+serviceB?.setAttribute('style','text-decoration: underline; color:#333333; font-size:40px;')  
  linkB?.classList.remove('hidden')
 })
 divB?.addEventListener('mouseout',()=>{
  linkB?.classList.add('hidden')
+    serviceB?.setAttribute('style','text-decoration: none; color:#000000; font-size:30px;' )
 })
  
 const linkC = document.querySelector('.linkC')
 divC?.addEventListener('mouseover',()=>{
+    serviceC?.setAttribute('style','text-decoration: underline; color:#333333; font-size:40px;')
  linkC?.classList.remove('hidden')
 })
 divC?.addEventListener('mouseout',()=>{
+    serviceC?.setAttribute('style','text-decoration: none; color:#000000; font-size:30px;' )
  linkC?.classList.add('hidden')
 })
  
 const linkD = document.querySelector('.linkD')
 divD?.addEventListener('mouseover',()=>{
+    serviceD?.setAttribute('style','text-decoration: underline; color:#333333; font-size:40px;')
  linkD?.classList.remove('hidden')
 })
 divD?.addEventListener('mouseout',()=>{
+    serviceD?.setAttribute('style','text-decoration: none; color:#000000; font-size:30px;' )
  linkD?.classList.add('hidden')
 })
 
@@ -61,15 +79,13 @@ divD?.addEventListener('mouseout',()=>{
       About Us
      </h1>
       <p id='aboutP' className='w-[45vw] '>
-        At Play To Learn Therapy, Your child's therapy is guided by a Board Certified Behavior Analyst (BCBA) ~ a Doctoral-level expert who designs and oversees every program.
-        Our dedicated Registered Behavior Technicians (RBTs) are trained and certified to provide day-to-day therapy, 
-        ensuring your child recieves the highest quality care.
-        <br></br><br></br>We believe every child in South Florida
-         has a unique and brilliant potential waiting to be unlocked.
-          Located in the heart of our vibrant, multicultural community, 
-          we provide exceptional, compassionate, and culturally-responsive 
-          Applied Behavior Analysis (ABA) therapy for children with autism
-           spectrum disorder (ASD) and other developmental differences.
+       At Play to Learn ABA Therapy, we believe every child learns best through joy
+        curiosity, and play. Our team is dedicated to providing individualized Applied Behavior
+         Analysis (ABA) programs that encourage growth, independence, and confidence. By blending
+          evidence-based therapy with engaging play, we create an environment where learning feels natural,
+           meaningful, and fun.
+           
+           
       </p>
       <div>
         <h2>Our Promise</h2>
@@ -82,11 +98,19 @@ divD?.addEventListener('mouseout',()=>{
         </p>
       </div>
       <div>
-      <div className='  w-[100vw] flex justify-around items-center'>
+      <div className=' grid grid-cols-4 gap-4 ml-[10vw]  w-[100vw] '>
       <img className='w-[200px]' src={bcbs} alt="" />
        <img className='w-[200px]' src={aetna} alt="" />
         <img className='w-[200px]' src={cigna} alt="" />
          <img className='w-[200px]' src={united} alt="" />
+            <img className='w-[200px]' src={avmed} alt="" />
+                <img className='w-[200px]' src={childrensmedical} alt="" />
+                    <img className='w-[200px]' src={molina} alt="" />
+                        <img className='w-[200px]' src={sunshine} alt="" />
+                            <img className='w-[200px]' src={humana} alt="" />
+                                <img className='w-[200px]' src={simply} alt="" />
+                                    <img className='w-[200px]' src={communitycare} alt="" />
+                                        <img className='w-[200px]' src={umr} alt="" />
       </div>
       </div>
      </div>
@@ -115,14 +139,7 @@ divD?.addEventListener('mouseout',()=>{
           </h1>
           <a className='hidden linkD' href="#">Learn More</a>
         </div>
-     </div>
-     <div id='formDiv'>
-      <form action="">
-
-      </form>
-     </div>
-           
-      
+     </div> 
      <Footer />
     </main>
     </>

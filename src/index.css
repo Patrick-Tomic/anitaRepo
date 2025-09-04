@@ -64,5 +64,6 @@
         font-size: 30px;
         text-decoration: underline;
         color:#333333;
+        transition: all 0.1s ease;
         text-align: center;
     }
