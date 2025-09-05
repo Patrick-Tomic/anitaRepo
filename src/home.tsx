@@ -110,10 +110,10 @@ divD?.addEventListener('mouseout',()=>{
                             <img className='w-[200px]' src={humana} alt="" />
                                 <img className='w-[200px]' src={simply} alt="" />
                                     <img className='w-[200px]' src={communitycare} alt="" />
-                                        <img className='w-[200px]' src={umr} alt="" />
+                                        <img className='w-[200px]' src={umr} alt="" /> 
       </div>
       </div>
-     </div>
+     </div> 
      <div className='grid grid-cols-2 gap-x-4 m-10 border-b-2 border-black border-solid'>
           <div id='divA' className='p-[50px] flex flex-col items-center  bg-[#F5F5DC] '>
             <h1  id='serviceHeader' className='serviceA text-[16px] font-[600]'>
