@@ -72,3 +72,10 @@
         transition: all 0.1s ease;
         text-align: center;
     }
+    #about{
+        padding: 100px;
+        margin-top:5vh;
+        background: white;
+        border: #6F4E37 2px solid;
+        border-radius: 20%;
+    }

@@ -1,6 +1,4 @@
 import logo from '../assets/logo.png'
-
-import bcba from '../assets/bcba.png'
 export default function Navbar() {
     return (
         <div id='navbar' className='w-full h-10  flex items-center justify-around'>
@@ -11,7 +9,7 @@ export default function Navbar() {
             <a href="#">Career</a>
             <a href="#">Resources</a>
              <a href="#">Contact Us</a>
-            <img className='w-[80px] mr-[40vw]' src={bcba} alt="" />
+           
           
         </div>
     )

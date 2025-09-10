@@ -1,7 +1,7 @@
 
  import Navbar from './components/navbar'
 import './App.css'
-
+import { useEffect } from 'react'
 import bcbs from './assets/bcbs.png'
 import cigna from './assets/cigna.png'
 import united from './assets/united.png'
@@ -18,7 +18,7 @@ import Footer from './components/footer'
 
 function Home() {
 
-///event listners for learn here links, hovering makes learn more anchor visible Link A-D
+  useEffect(() => {
 const divA = document.querySelector('#divA')
 const serviceA = document.querySelector('.serviceA')
 const serviceB = document.querySelector('.serviceB')
@@ -66,6 +66,10 @@ divD?.addEventListener('mouseout',()=>{
     serviceD?.setAttribute('style','text-decoration: none; color:#000000; font-size:30px;' )
  linkD?.classList.add('hidden')
 })
+  }, 
+  [])
+///event listners for learn here links, hovering makes learn more anchor visible Link A-D
+
 
   return (<>
 
@@ -74,9 +78,9 @@ divD?.addEventListener('mouseout',()=>{
      <div id='hero' className='h-[100vh] w-full bg-[./assets/stock.png] bg-cover bg-center'  >
       <p id='heroText' className='w-[45vw] font-new text-[50px]  ml-[50vw] mt-[5vh]'>Learning through play, growing every day.</p>
      </div>
-     <div id='about' className='p-[50px] flex flex-col border-b-2 border-black border-solid flex items-center justify-center'>
+     <div className='p-[50px] flex flex-col border-b-2 border-black border-solid flex items-center justify-center'>
      <h1>
-      About Us
+      About Us 
      </h1>
       <p id='aboutP' className='w-[45vw] '>
        At Play to Learn ABA Therapy, we believe every child learns best through joy
