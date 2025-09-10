@@ -1,6 +1,3 @@
-[build]
-  command = "npm run build" # Or "yarn build" depending on your package manager
-  publish = "build" # Or "dist" if your build output directory is named differently
 
 [[redirects]]
   from = "/*"
