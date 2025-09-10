@@ -4,7 +4,7 @@ export default function Navbar() {
         <div id='navbar' className='w-full h-10  flex items-center justify-around'>
             <a href="/">   <img src={logo} alt="" className='max-w-[15vw]'/></a>
             <a href='/about'>About</a>
-            <a href="#"> Events</a>
+            <a href="/services"> Events</a>
             <a href="#">Services</a>
             <a href="#">Career</a>
             <a href="#">Resources</a>
