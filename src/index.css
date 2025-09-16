@@ -5,7 +5,9 @@
    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Abel&family=Archivo+Black&family=Bebas+Neue&display=swap');
  
-  
+  b{
+    font-weight:bolder;
+  }
     #root{
         margin: 0;
         padding: 0;
