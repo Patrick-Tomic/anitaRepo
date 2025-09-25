@@ -4,15 +4,18 @@ export default function Navbar() {
     
     useEffect(() => {
         console.log('navbar loaded')
-        const intakeAnchor: any = document.getElementById('#intakeAnchor')
+        const intakeAnchor: any = document.getElementById('intakeAnchor')
         intakeAnchor?.addEventListener('mouseover', () => {
-            intakeAnchor.style.borderBottom = '2px solid black'
+            
+           intakeAnchor.setAttribute('style','display:block; border-bottom:2px solid black;')
         })
-        const serviceAnchor: any = document.getElementById('#serviceContainer')
-        console.log(serviceAnchor)
-        console.log(intakeAnchor)
+        const serviceAnchor: any = document.getElementById('serviceContainer')
+        
         serviceAnchor?.addEventListener('mouseover', () => {
-            console.log('gg')
+            intakeAnchor.setAttribute('style','display:block')
+        })
+        serviceAnchor?.addEventListener('mouseout', () => {
+            intakeAnchor.setAttribute('style','display:none')
         })
     }, [])
     return (
@@ -21,8 +24,8 @@ export default function Navbar() {
             <a href='/about'>About</a>
             <a href=""> Events</a>
             <div id='serviceContainer' className='flex flex-col h-[20vh] '>
-            <a id='serviceAnchor' className='mt-[8vh]' href="/services">Services</a>
-            <a id='intakeAnchor' className='mt-[2vh] border-b-2 hidden border-black'href="/services/assessment">
+            <a id='serviceAnchor' className='mt-[8.5vh]' href="/services">Services</a>
+            <a id='intakeAnchor' className='mt-[2vh] hidden'href="/services/assessment">
             Intake & Assessment </a>
             </div>
             <a href="#">Career</a>

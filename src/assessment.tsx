@@ -9,13 +9,16 @@ export default function Assessment() {
                      <p id='heroText' className='w-[45vw] font-new text-[50px]  ml-[0vw] mt-[5vh]'>Intake and Assessment Process</p>
                 </div>
                       <div id='aboutP' className="flex bg-[#F5F5DC] flex-col items-center justify-center">
-                        <p className='w-[50vw]'>At  Play to Learn Therapy, we are dedicated to delivering personalized, high-quality services 
+                       <div className='flex flex-col items-center justify-center border-2 border-black border-solid p-[5vw]'>
+                        <p id='aboutP' className='w-[50vw]'>At  Play to Learn Therapy, we are dedicated to delivering personalized, high-quality services 
                             that meet the unique needs of every child and family.
                             <br></br><br></br>Our intake and assessment process is designed to be supportive,
                              straightforward, and comprehensive—ensuring the best possible start to your child’s 
                              therapeutic journey.</p>
-                             <div>
-                            <h1 className='text-2xl font-bold mt-10'>1.): Initial Contact</h1>
+                             </div>
+                             <div className='flex'>
+                            <div>
+                                <h1 className='text-2xl font-bold mt-10'>1.): Initial Contact</h1>
                             <ul>
                                 <li>
                                     Families contact our office via phone, email or website form
@@ -30,6 +33,8 @@ export default function Assessment() {
                                         Family will receive an overview of our therapy model, service options and next steps
                                 </li>
                             </ul>
+                            </div>
+                            <img src="" alt="" />
                              </div>
                                <div>
                             <h1 className='text-2xl font-bold mt-10'>2.): Intake Meeting</h1>
